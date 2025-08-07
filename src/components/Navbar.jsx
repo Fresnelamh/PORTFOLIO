@@ -54,7 +54,7 @@ const Navbar = () => {
               download="Shridhar_Rai_Resume.pdf"
               target="_blank"
             >
-              Resume
+              Curriculum Vitae
             </a>
           </li>
         </ul>

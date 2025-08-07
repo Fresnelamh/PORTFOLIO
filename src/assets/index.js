@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import logo from "./logo.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -36,6 +36,12 @@ import zealApp from "./projects/zealApp.png";
 import rollWeb from "./projects/rollWeb.png";
 import rollApp from "./projects/rollApp.png";
 
+import LINUS from "./projects/LINUS.png";
+import ADPRIVI from "./projects/ADPRIVI.jpg";
+import Rengineering from "./projects/Rengineering.png";
+import afev from "./projects/afev.png";
+import EBIOS from "./projects/EBIOS.png";
+
 export {
   logo,
   backend,
@@ -72,4 +78,9 @@ export {
   zealApp,
   rollWeb,
   rollApp,
+  LINUS,
+  Rengineering,
+  ADPRIVI,
+  afev,
+  EBIOS,
 };

@@ -18,7 +18,7 @@ const HireMe = () => {
           className="flex justify-center items-center absolute left-4 top-4 green-pink-gradient w-16 h-16 rounded-full"
           target="_blank"
         >
-          <span className="text-white text-[14px] p-1 font-bold">Hire Me</span>
+          <span className="text-white text-[14px] p-1 font-bold">Contactez moi</span>
         </a>
       </div>
     </motion.div>

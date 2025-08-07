@@ -1,4 +1,6 @@
+import { m } from "framer-motion";
 import {
+ 
   mobile,
   backend,
   creator,
@@ -30,7 +32,12 @@ import {
   rollApp,
   linkedIn,
   github,
-} from "../assets";
+  LINUS,
+  EBIOS,
+  Rengineering,
+  afev,
+  ADPRIVI,
+}from "../assets";
 
 const navigationPaths = {
   home: "/",
@@ -42,11 +49,11 @@ const navigationPaths = {
 export const navLinks = [
   {
     id: navigationPaths.about,
-    title: "About",
+    title: "À propos",
   },
   {
     id: navigationPaths.work,
-    title: "Work",
+    title: "Expériences",
   },
   {
     id: navigationPaths.contact,
@@ -56,22 +63,79 @@ export const navLinks = [
 
 const services = [
   {
-    title: "React Developer",
-    icon: web,
+    title: "Pentesting",
+   /* icon: web,*/
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
+    title: "Administration systèmes & réseaux",
+   /* icon: mobile,*/
   },
   {
-    title: "NodeJs Developer",
-    icon: backend,
+    title: "Machine Learning",
+   /* icon: backend,*/
   },
   {
-    title: "Javascript Developer",
-    icon: creator,
+    title: "Audit & évaluation de sécurité",
+    /*icon: creator,*/
+
+
   },
+  {
+    title: "Cybersécurité défensive",
+    /*icon: creator,*/
+
+
+  },
+   
+  
+
+
 ];
+
+const comp = [
+  {
+    title: "Rigueur",
+    
+    
+  },
+  {
+    title: "Dynamisme",
+   
+  },
+  {
+    title: "Sens du travail en équipe",
+ 
+   
+  },
+
+
+ 
+];
+
+
+
+
+const tran = [
+  {
+    title: "Capacités analytiques et de synthèse",
+   /* icon:web*/
+    
+  },
+  {
+    title: "Vulgarisation technique",
+  
+
+  },
+  {
+    title: "Aisance à l'oral",
+    
+   
+  },
+ 
+];
+
+
+/*
 
 const technologies = [
   {
@@ -110,260 +174,437 @@ const technologies = [
     name: "Angular",
     icon: angular,
   },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Java",
-    icon: java,
-  },
-  {
-    name: "MySQL",
-    icon: mysql,
-  },
-  {
-    name: "Git",
-    icon: git,
-  },
-];
 
+  
+];
+*/
+
+const experiences=[ 
+    {
+    "title": "Audit sécurité – Infrastructures hybrides (Windows/Linux)",
+    "company_name": "NelWebdynamics",
+    "company_website": "https://www.nickelfox.com/",
+    "icon":  crmnext,
+    "iconBg": "#E6DEDD",
+    "date": "Juillet - Août 2025",
+    "points": [
+      "Chez NelWebdynamics, j'ai mené un audit de sécurité selon la norme ISO 27001, en me concentrant sur le durcissement des infrastructures hybrides Windows/Linux.",
+      "J'ai configuré et sécurisé des services comme Active Directory, DNS et DHCP.",
+      "Élaboration de politiques de sécurité et de recommandations alignées sur les standards ISO et Ebios.",
+      "Cette expérience a renforcé mes compétences en gestion des risques et en sécurisation des infrastructures."
+    ]
+  },
+ 
+
+
+  {
+    "title": "Stagiaire IA – Planification RH intelligente",
+    "company_name": "HNM Business Management",
+   
+    "icon":  crmnext,
+    "iconBg": "#E6DEDD",
+    "date": "Mai - Juillet 2025",
+    "points": [
+      "Lors de mon stage chez HNM Business Management, j'ai développé un agent autonome de planification de tâches utilisant des algorithmes d'IA.",
+      "Ce projet m'a permis de générer automatiquement des plannings en tenant compte des contraintes métiers, améliorant ainsi l'efficacité opérationnelle.",
+      "Ce fut une expérience enrichissante où j'ai pu appliquer mes compétences en IA et en Python pour résoudre des problèmes concrets."
+    ]
+  }
+,
+
+
+
+  {
+    "title": "Développeur C++ Projet de Stéganographie",
+    "company_name": "ESAIP, école d'ingénieurs",
+    "company_website": "https://www.nickelfox.com/",
+    "icon":  crmnext,
+    "iconBg": "#E6DEDD",
+    "date": "Nov 2024 - Fév 2025",
+    "points": [
+      "Développement en C++ d’un algorithme de stéganographie pour dissimuler des images dans d’autres via les bits de poids faible (LSB).",
+      "Utilisation de la bibliothèque OpenCV pour la manipulation et l'encodage/décodage pixel par pixel.",
+      "Création d’une interface de démonstration permettant de cacher et révéler dynamiquement des images secrètes."
+    ]
+  },
+ {
+  title: "Stage en développement web",
+  company_name: "SCI Berete",
+  company_website: "https://www.businessnext.com/crm",
+  icon: crmnext,
+  iconBg: "#E6DEDD",
+  date: "Mai 2024 - Juin 2024",
+  points: [
+"Développement d’interfaces web responsives en HTML, CSS, JavaScript et PHP pour la gestion d’une base de données immobilière.",
+"Mise en place d’un système d’authentification sécurisé avec formulaire de connexion, enregistrement et gestion des sessions.",
+"Amélioration de l’expérience utilisateur et optimisation du temps de chargement grâce à une structuration claire du code.",
+  ],
+},
+
+
+ 
+
+];
+/*
 const experiences = [
   {
-    title: "Software Engineer",
-    company_name: "Crmnext",
+    title: "Développeur dans un projet de détection de fraudes bancaires via IA",
+    company_name: "ESAIP,école d'ingénieurs",
     company_website: "https://www.businessnext.com/crm",
     icon: crmnext,
     iconBg: "#E6DEDD",
-    date: "Nov 2023 - Present",
+    date: "Fev 2025 - Avril 2025",
     points: [
-      "Developed Flow and Layout Designers for HDFC, PNB, IOB, and Utkarsh Bank.",
-      "Boosted team efficiency by 50% by implementing monorepo architecture and reusable Design-System.",
-      "Integrated GenAI models to automate flow creation from user prompts, eliminating manual configuration efforts.",
-      "Integrated unit testing with 80% code coverage, enhancing code reliability and reducing bugs.",
+"Conception d’un modèle de machine learning pour identifier les fraudes dans des données bancaires réelles et anonymisées.",
+"Optimisation du pipeline de traitement (nettoyage, normalisation, rééquilibrage) pour garantir la fiabilité des prédictions.",
+"Développement d’une API fonctionnelle permettant des démonstrations interactives de détection de fraude en temps réel."
     ],
   },
   {
-    title: "Software Engineer",
-    company_name: "Nickelfox Technologies",
+    title: "Développeur C++ Projet de Stéganographie",
+    company_name: "ESAIP,école d'ingénieurs",
     company_website: "https://www.nickelfox.com/",
     icon: nickelfox,
     iconBg: "#E6DEDD",
-    date: "Jan 2022 - Nov 2023",
+    date: "Nov 2024 - Fev 2025",
     points: [
-      "Developing and maintaining web and mobile applications using React.js, React-native and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+    "Développement en C++ d’un algorithme de stéganographie pour dissimuler des images dans d’autres via les bits de poids faible (LSB).",
+"Utilisation de la bibliothèque OpenCV pour la manipulation et l'encodage/décodage pixel par pixel.",
+"Création d’une interface de démonstration permettant de cacher et révéler dynamiquement des images secrètes.",
     ],
   },
   {
-    title: "Software Developer",
-    company_name: "Newgen Software",
+    title: " Réseaux QoS ACL– ESAIP",
+    company_name: "ESAIP,école d'ingénieurs",
     company_website: "https://newgensoft.com/home-india/",
     icon: newgen,
     iconBg: "#E6DEDD",
-    date: "Mar 2021 - Dec 2021",
+    date: "Novembre 2024",
     points: [
-      "Developed a groundbreaking banking product for a Singapore-based firm, improved transaction management.",
-      "Developed a dynamic dashboard for efficient transaction management, resulting in a 30% increase in productivity.",
-      "Optimized frontend performance by achieving 20% reduction in page loading time and make it responsive.",
-      "Created a transaction report generator, reducing report generation time by 50% and enhancing data analysis.",
+     "Configuration et optimisation de la qualité de service (QoS) sur des équipements réseau pour garantir la priorité du trafic critique.",
+"Mise en place de listes de contrôle d’accès (ACL) pour sécuriser les communications selon des règles spécifiques.",
+"Tests et validation des performances réseau avec des scénarios simulés d'entreprise et d'éducation.",
     ],
   },
   {
-    title: "Software Engineer Intern",
-    company_name: "Skillrisers",
+    title: "Administration Linux & Windows",
+    company_name: "ESAIP,école d'ingénieurs",
     company_website: "https://www.skillrisers.com/",
     icon: skillrisers,
     iconBg: "#E6DEDD",
-    date: "Jan 2020 - Jul 2020",
+    date: "Novembre 2024 - Dec 2024",
     points: [
-      "Contributed to the development of a Test Engine Application, empowering users to create and conduct tests seamlessly.",
-      "Built three essential modules: Teacher, Student, and Admin, ensuring comprehensive functionality for all user roles.",
-      "Collaborated effectively with the development team, actively participating in code reviews and resolving technical challenges.",
-      "Demonstrated strong problem-solving skills, consistently delivering high-quality code and meeting project deadlines.",
+      "Installation et configuration de serveurs DHCP sur Linux pour l’attribution automatique d’adresses IP dans un réseau local.",
+"Mise en place de zones DNS directes et inverses avec Bind9 pour la résolution de noms sur un serveur Debian.",
+"Gestion fine des services réseaux Linux : journalisation, dépannage, et vérification de la connectivité avec des outils CLI.",
+"Administration de machines virtuelles Windows Server 2019 via Hyper-V pour la gestion des rôles et services réseau.",
+"Création et gestion d'utilisateurs, stratégies de groupe (GPO) et unités d’organisation dans un domaine Active Directory.",
+"Déploiement de rôles Windows comme DHCP, DNS et services de fichiers (FSRM), avec supervision et tests de connectivité."
     ],
   },
-  {
-    title: "Frontend Developer",
-    company_name: "Self-employed",
-    company_website: "https://proximus.surge.sh/index.html",
-    icon: proximus,
-    iconBg: "#E6DEDD",
-    date: "Jan 2018 - Jan 2021",
-    points: [
-      "Spearheaded the development of a fully responsive website for the college coding society.",
-      "Led coding sessions, actively sharing knowledge and insights to enrich members' programming skills and understanding.",
-      "Organized informative sessions on cutting-edge technologies, including JavaScript and ReactJs.",
-      "Curated and designed challenging coding problems for college competitions.",
-    ],
-  },
+ 
 ];
-
+*/
 const projects = [
+  
   {
-    name: "Aptihealth Web",
+    name: "Administration Windows",
     description:
-      "Revolutionizing mental healthcare in New York State with a user-friendly platform for personalized therapy and progress tracking. Provides the digital gateway to comprehensive behavioral healthcare.",
+      "Déploiement d’une infrastructure Active Directory avec gestion centralisée des utilisateurs et des stratégies via GPO, pour un environnement Windows sécurisé et automatisé.",
     tags: [
       {
-        name: "reactjs",
+        name: "Admin Windows",
         color: "blue-text-gradient",
       },
       {
-        name: "redux",
+        name: "Linkedin",
         color: "green-text-gradient",
       },
       {
-        name: "nodejs",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: aptihealthWeb,
-    hosted_link: "https://www.aptihealth.com/",
-  },
-  {
-    name: "Aptihealth App",
-    description:
-      "Access top-notch mental healthcare anytime, anywhere in New York State with our innovative app. Track your progress, schedule appointments, and connect with expert therapists for personalized care.",
-    tags: [
-      {
-        name: "react-native",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "sendbird",
-        color: "green-text-gradient",
-      },
-      {
-        name: "twilio",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: aptihealthApp,
-    hosted_link: "https://apps.apple.com/us/app/aptihealth/id1477170874",
-  },
-  {
-    name: "Zeal Web",
-    description:
-      "The Zeal website elevates the experience of enjoying activities with trusted friends, fostering connections and making every interaction exciting.",
-    tags: [
-      {
-        name: "reactjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "typescript",
-        color: "green-text-gradient",
-      },
-      {
-        name: "firebase",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: zealWeb,
-    hosted_link: "https://getzeal.co/",
-  },
-  {
-    name: "Zeal App",
-    description:
-      "Discover a world of activities with friends through Zeal, an engaging platform. Create events, post updates, chat, and enjoy in-person activities hassle-free. Boost your social life with Zeal!",
-    tags: [
-      {
-        name: "react-native",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "sendgrid",
-        color: "green-text-gradient",
-      },
-      {
-        name: "typescript",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: zealApp,
-    hosted_link:
-      "https://apps.apple.com/us/app/zeal-activities-with-friends/id6446917140",
-  },
-  {
-    name: "Roll Web",
-    description:
-      "The Roll website is the gateway to the future of decentralized communities and digital assets. It allows users to seamlessly earn, redeem, send, and trade social tokens.",
-    tags: [
-      {
-        name: "reactjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "green-text-gradient",
-      },
-      {
-        name: "formik",
+        name: "Windows Server",
         color: "pink-text-gradient",
       },
     ],
     image: rollWeb,
     hosted_link: "https://app.tryroll.com/",
   },
+
+
+
   {
-    name: "Roll App",
+    "name": "Red Team CTF",
+    "description": "Projet de pentest et d'audit de vulnérabilités dans un environnement Active Directory. Utilisation d'outils comme Nmap, Metasploit pour l'exploitation de failles, l'élévation de privilèges et la rédaction d'un rapport de sécurité détaillé.",
+    "tags": [
+      {
+        "name": "Cybersécurité",
+        "color": "blue-text-gradient"
+      },
+      {
+        "name": "Pentest",
+        "color": "green-text-gradient"
+      },
+      {
+        "name": "Active Directory",
+        "color": "pink-text-gradient"
+      }
+    ],
+    "image": ADPRIVI,
+    "hosted_link": "https://github.com/Fresnelamh/RedTeamCTF/"
+  },
+  {
+    "name": "EBIOS RM - RGPD",
+    "description":"Dans le cadre d’un module académique dédié à la gestion des risques en cybersécurité, j’ai réalisé une analyse des risques liés au RGPD en appliquant la méthode EBIOS Risk Manager. Le projet a porté sur la cartographie des actifs critiques, l’évaluation des impacts et des menaces, ainsi que la formulation de mesures de sécurité conformes à la norme ISO/CEI 27001.",
+    "tags": [
+      {
+        "name": "RGPD",
+        "color": "blue-text-gradient"
+      },
+      {
+        "name": "EBIOS RM",
+        "color": "green-text-gradient"
+      },
+      {
+        "name": "ISO 27001",
+        "color": "pink-text-gradient"
+      }
+    ],
+    "image": EBIOS,
+    "hosted_link": "https://github.com/Fresnelamh/EBIOS-RM-RGPD/"
+  },
+
+  
+
+   {
+    name: "SCI Berete",
     description:
-      "Join the future of decentralized communities and digital assets with Roll. Earn, redeem, send, and trade social tokens on this innovative platform. Experience transparent transactions and captivating UI design.",
+      "Sci Berete est une société immobilière moderne pour laquelle j’ai conçu un site web sur-mesure dans le cadre de mon stage au cours de ma première année de formation, combinant élégance visuelle et fluidité de navigation pour valoriser ses biens et attirer de nouveaux clients.",
     tags: [
       {
-        name: "react-native-web",
+        name: "HTML",
         color: "blue-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "CSS",
         color: "green-text-gradient",
       },
       {
-        name: "storybook",
+        name: "JS",
         color: "pink-text-gradient",
       },
     ],
-    image: rollApp,
-    hosted_link:
-      "https://play.google.com/store/apps/details?id=com.roll&hl=en_GB",
+    image: zealApp,
+    hosted_link: "https://getzeal.co/",
   },
+
+
+
+
+
+
+
+
+  {
+    name: "Fraudshield",
+    description:
+    "FraudShield est une solution propulsée par l’intelligence artificielle, qui détecte en temps réel les fraudes bancaires en analysant les transactions avec une précision redoutable.",
+    tags: [
+      {
+        name: "Python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Machine Learning",
+        color: "green-text-gradient",
+      },
+      {
+        name: "IA",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: aptihealthApp,
+    hosted_link: "https://github.com/Fresnelamh/FraudShield/",
+  },
+  {
+    name: "Chess game",
+    description:
+      "Développement d’un jeu d’échecs en Python combinant logique stratégique, interface intuitive et algorithmes intelligents pour offrir une expérience de jeu fluide et captivante.",
+    tags: [
+      {
+        name: "Python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "POO",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Pygame",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: zealWeb,
+    hosted_link: "https://apps.apple.com/us/app/aptihealth/id1477170874",
+  },
+ 
+{
+    "name": "Reverse Engineering Malware",
+    "description": "Analyse statique et dynamique de binaires suspects en utilisant Ghidra et Cuckoo Sandbox. Identification d'indicateurs de compromission (IOCs), analyse du comportement malveillant et rédaction de recommandations pour les centres d'opérations de sécurité (SOC).",
+    "tags": [
+      {
+        "name": "Reverse Engineering",
+        "color": "blue-text-gradient"
+      },
+      {
+        "name": "Ghidra",
+        "color": "green-text-gradient"
+      },
+      {
+        "name": "Cuckoo Sandbox",
+        "color": "pink-text-gradient"
+      }
+    ],
+    "image":Rengineering,
+    "hosted_link": "https://github.com/Fresnelamh/ReverseEngineeringMalware/"
+  },
+
+,{
+    name: "Administration Linux et Réseau",
+    description: "Projet de configuration réseau : Multisites, DNS et DHCP. Dans le cadre de ma deuxième année d'études en Bachelor Cybersécurité, j’ai eu l’opportunité de réaliser un projet complet impliquant la mise en place d’une infrastructure réseau avec hébergement web multisite, serveur DNS pour la résolution de noms de domaine, et serveur DHCP pour l’attribution dynamique des adresses IP.",
+    tags: [
+      {
+        name: "Linux",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "DNS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "DHCP",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: LINUS, // Remplacez par le chemin de votre image
+    hosted_link: "https://github.com/your-link", // Remplacez par votre lien
+  },
+
+
+
+
+
+
 ];
 
+
+const d=[
+  
+   
+
+
+
+  {
+    name: " Membre du Bureau des Internationaux",
+    description:
+      "En tant que membre du Bureau des Internationaux à l'ESAIP, je participe activement à l'organisation d'événements et au soutien des étudiants internationaux, facilitant leur intégration.",
+    tags: [
+      {
+        name: "BDI",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "ESAIP",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Internationaux",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: aptihealthWeb,
+    hosted_link: "https://afev.org/bretagne-pays-loire/angers",
+  },
+
+{
+
+  name: "Mentor bénévole à l'Afev",
+    description:
+      "En tant que bénévole à l'AFEV, j'accompagne des jeunes en difficulté scolaire en leur offrant un soutien éducatif et personnel, adapté à leurs besoins pour surmonter leurs défis académiques.Je les aide à développer leur confiance en eux et leur autonomie, tout en favorisant un environnement d'apprentissage positif.",
+    tags: [
+      {
+        name: "AFEV",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Accompagnement",
+        color: "green-text-gradient",
+      },
+      {
+        name: "élèves",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: afev,
+    hosted_link: "https://afev.org/bretagne-pays-loire/angers",
+  },
+
+]
+
 const personalInfo = {
-  name: "Shridhar",
-  fullName: "Shridhar Rai",
-  email: "raishridhar619@gmail.com",
-  role: "Software Developer",
-  about: `I'm a skilled software developer with experience in TypeScript and
-  JavaScript, and expertise in frameworks like React.Js, React-naitve,
-  Node.js etc. I'm a quick learner and collaborate closely with clients to
-  create efficient, scalable, and user-friendly solutions that solve
-  real-world problems. Let's work together to bring your ideas to life!`,
-  projectsIntro: `Following projects showcases my skills and experience through
-  real-world examples of my work. Each project is briefly described with
-  live demos. It reflects my ability to solve complex problems, work
-  with different technologies, and manage projects effectively.`,
+  name: "Fresnel",
+  fullName: "Fresnel AMAHOWE",
+  email: "ogouyemkadukpefresnel@gmail.com",
+  role: "Étudiant en 3ème année de Bachelor Cybersécurité",
+  about: `Je suis Fresnel AMAHOWE, étudiant en cybersécurité.
+Curieux, rigoureux, et doté de solides compétences rédactionnelles
+ et d’analyse, j’ai une forte appétence pour l’apprentissage
+ continu,aussi bien en cybersécurité qu’en intelligence artificielle.
+
+Je possède des compétences techniques en pentesting, 
+audit, ainsi qu’en administration des systèmes et réseaux.
+
+Je suis actuellement à la recherche d’une alternance pour
+ l’année scolaire 2025-2026 (du 1er septembre 2025 au 31 août 2026), 
+ et je souhaite avoir l’opportunité de contribuer activement aux missions d'une équipe dynamique où je pourrai mettre mes compétences à profit et apprendre aux côté d'experts.`,
+  projectsIntro: `Ces projets illustrent mes compétences
+   en intelligence artificielle, cybersécurité, développement web et réseaux.
+    Ils témoignent de ma capacité 
+  à concevoir des solutions innovantes, 
+  sécurisées et performantes à travers 
+  des cas concrets et variés.`,
 };
 
+
+
+const personalInfoa = {
+  name: "Ma Formation",
+  fullName:"ESAIP,école d'ingénieurs",
+  email: "ogouyemkadukpefresnel@gmail.com",
+  role: "Étudiant en 3ème année de Bachelor Cybersécurité",
+  about: `L'ESAIP forme les experts de demain en cybersécurité
+   à travers la formation de BACHELOR Cybersécurité 
+  axé sur la pratique ,l'analyse des risques ,la sécurité des données 
+  .Une école d'ingénieurs reconnue pour son exigence et son ancrage 
+  dans les enjeux actuels de la cybersécurité.`,
+  
+  projectsIntro: `Ces projets illustrent mes compétences
+   en intelligence artificielle, cybersécurité, développement web et réseaux.
+    Ils témoignent de ma capacité 
+  à concevoir des solutions innovantes, 
+  sécurisées et performantes à travers 
+  des cas concrets et variés.`,
+};
 const publicUrls = {
   resume:
-    "https://drive.google.com/file/d/1vmiPiCLaCuqM0uuDcXQlAd8pY8yBDEOU/view?usp=sharing",
+    "https://drive.google.com/file/d/1ICCft161weCKlwuaK5FusC6HffSFnPFF/view?usp=drive_link",
   socialProfiles: {
     linkedin: {
       title: "linkedin",
-      link: "https://www.linkedin.com/in/shridharrai/",
+      link: "https://www.linkedin.com/in/fresnel-amahowe-0430a22a4/",
       icon: linkedIn,
     },
     github: {
       title: "github",
-      link: "https://github.com/shridharrai",
+      link: "https://github.com/Fresnelamh",
       icon: github,
     },
   },
@@ -371,10 +612,14 @@ const publicUrls = {
 
 export {
   services,
-  technologies,
+
   experiences,
   projects,
   navigationPaths,
   personalInfo,
+  personalInfoa,
   publicUrls,
+  d,
+  comp,
+  tran
 };

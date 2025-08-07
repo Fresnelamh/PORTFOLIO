@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+/*import React, { useRef, useState } from "react";
 import SectionWrapper from "../hoc/SectionWrapper";
 import { motion } from "framer-motion";
 import { slideIn } from "../utils/motion";
@@ -111,7 +111,7 @@ const Contact = () => {
             className="mt-12 flex flex-col gap-8"
           >
             <label className="flex flex-col">
-              <span className="text-white font-medium mb-4">Your Name</span>
+              <span className="text-white font-medium mb-4">Votre Nom</span>
               <input
                 type="text"
                 name="name"
@@ -123,7 +123,7 @@ const Contact = () => {
             </label>
 
             <label className="flex flex-col">
-              <span className="text-white font-medium mb-4">Your Email</span>
+              <span className="text-white font-medium mb-4">Votre addresse mail</span>
               <input
                 type="email"
                 name="email"
@@ -135,7 +135,7 @@ const Contact = () => {
             </label>
 
             <label className="flex flex-col">
-              <span className="text-white font-medium mb-4">Your Message</span>
+              <span className="text-white font-medium mb-4">Votre Message</span>
               <textarea
                 rows={7}
                 name="message"
@@ -176,3 +176,75 @@ const Contact = () => {
 };
 
 export default SectionWrapper(Contact, "contact");
+*/
+
+
+
+import React from "react";
+import SectionWrapper from "../hoc/SectionWrapper";
+import { motion } from "framer-motion";
+import { slideIn } from "../utils/motion";
+import { styles } from "../styles";
+import { EarthCanvas } from "./canvas";
+import { personalInfo, publicUrls } from "../constants";
+import qrCode from "../assets/qrcode.png"; // Assurez-vous que le chemin est correct
+
+const Contact = () => {
+  return (
+    <div className="xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden">
+      <motion.div
+        variants={slideIn("left", "tween", 0.2, 1)}
+        className="relative flex-[0.75] bg-black-100 p-8 rounded-2xl"
+      >
+        <div className="flex items-center justify-end space-x-4 absolute top-8 right-4">
+          {Object.keys(publicUrls.socialProfiles).map((socialProfile) => {
+            const profile = publicUrls.socialProfiles[socialProfile];
+            return (
+              <div
+                key={`social_${profile.title}`}
+                onClick={() => window.open(profile.link, "_blank")}
+                className="green-pink-gradient lg:w-10 lg:h-10 h-8 w-8 rounded-full flex justify-center items-center cursor-pointer hover:scale-110"
+              >
+                <img
+                  src={profile.icon}
+                  alt={`social_${profile.title}`}
+                  className="w-4/6 h-4/6 object-contain"
+                />
+              </div>
+            );
+          })}
+        </div>
+        <p className={styles.sectionSubText}>Get in touch</p>
+        <h3 className={styles.sectionHeadText}>Contact.</h3>
+        <div className="mt-4">
+          <p className="text-white">
+            Email:{" "}
+            <a
+              href={`mailto:${personalInfo.email}`}
+              className="text-blue-400 hover:text-blue-600"
+            >
+              {personalInfo.email}
+            </a>
+          </p>
+        </div>
+      </motion.div>
+      <motion.div
+        variants={slideIn("right", "tween", 0.2, 1)}
+        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
+      >
+        <EarthCanvas />
+      </motion.div>
+      <div className="flex flex-col items-center justify-center mt-10">
+        <h3 className={styles.sectionHeadText}>Vidéo de présentation</h3>
+        <img
+          src={qrCode}
+          alt="QR Code pour la vidéo de présentation"
+          className="w-48 h-48 mt-4"
+        />
+      </div>
+    </div>
+  );
+};
+
+export default SectionWrapper(Contact, "contact");
+

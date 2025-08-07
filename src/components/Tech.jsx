@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+/*import React, { useState } from "react";
 import { technologies } from "../constants";
 import { BallCanvas } from "./canvas";
 
@@ -12,7 +12,7 @@ const Tech = () => {
   const handleMouseLeave = () => {
     setTooltipTexts({});
   };
-
+/*
   return (
     <div className="flex flex-row flex-wrap justify-center gap-10">
       {technologies.map((technology, index) => (
@@ -35,6 +35,21 @@ const Tech = () => {
       ))}
     </div>
   );
+
+  
+};
+
+export default Tech;
+
+*/
+
+
+
+
+import React from "react";
+
+const Tech = () => {
+  return null; // Ce composant ne rend rien
 };
 
 export default Tech;
